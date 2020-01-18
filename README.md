@@ -2,10 +2,11 @@
 
 [![](https://jitpack.io/v/ssseasonnn/Cloak.svg)](https://jitpack.io/#ssseasonnn/Cloak)
 
+*Read this in other languages: [中文](README.zh.md), [English](README.md), [Change Log](CHANGELOG.md)*
+
 # Cloak
 
-
-*Read this in other languages: [中文](README.zh.md), [English](README.md), [Change Log](CHANGELOG.md)*
+Get or put data from SharedPreference safely and quickly.
 
 ## Prepare
 

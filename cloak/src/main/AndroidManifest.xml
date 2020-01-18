@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="zlc.season.cloak" />
+<manifest package="zlc.season.cloak" />

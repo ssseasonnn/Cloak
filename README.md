@@ -27,9 +27,33 @@ dependencies {
 }
 ```
 
-## Start
+
+## Usage
+
+```kotlin
+//define config:
+object Config {
+    var booleanSp by mutableSp<Boolean>()
+    var intSp by mutableSp<Int>()
+    var longSp by mutableSp<Long>()
+    var floatSp by mutableSp<Float>()
+    var stringSp by mutableSp<String>()
+
+    var customSp by mutableSp<CustomBean>()
+
+    var arraySp by mutableSp<Array<String>>()
+
+    var listSp by mutableSp<List<String>>()
+}
+
+//save config：
+Config.booleanSp = true
+Config.customSp = CustomBean(123, true, "abc")
 
 
+//use config：
+val booleanSp = Config.booleanSp
+```
 
 ### License
 

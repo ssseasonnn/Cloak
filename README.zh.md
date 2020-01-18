@@ -2,9 +2,11 @@
 
 [![](https://jitpack.io/v/ssseasonnn/Cloak.svg)](https://jitpack.io/#ssseasonnn/Cloak)
 
+*Read this in other languages: [中文](README.zh.md), [English](README.md), [Change Log](CHANGELOG.md)*
+
 # Cloak
 
-*Read this in other languages: [中文](README.zh.md), [English](README.md), [Change Log](CHANGELOG.md)*
+安全快速存取SharedPreferences
 
 ## Prepare
 
@@ -26,8 +28,32 @@ dependencies {
 }
 ```
 
-## Start
+## Usage
 
+```kotlin
+//定义配置项：
+object Config {
+    var booleanSp by mutableSp<Boolean>()
+    var intSp by mutableSp<Int>()
+    var longSp by mutableSp<Long>()
+    var floatSp by mutableSp<Float>()
+    var stringSp by mutableSp<String>()
+
+    var customSp by mutableSp<CustomBean>()
+
+    var arraySp by mutableSp<Array<String>>()
+
+    var listSp by mutableSp<List<String>>()
+}
+
+//保存配置：
+Config.booleanSp = true
+Config.customSp = CustomBean(123, true, "abc")
+
+
+//使用配置：
+val booleanSp = Config.booleanSp
+```
 
 ### License
 
